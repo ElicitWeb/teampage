@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Readex+Pro:wght@700&display=swap');
+
+body {
+	background-color: black;
+	margin-bottom: 300px;
+}
+
+.heading-box,
+.sub-heading-box {
+	text-align: center;
+	margin-top: 70px;
+}
+
+.heading {
+	font-size: 80px;
+	font-family: Readex Pro;
+	color: white;
+}
+
+.heading2 {
+	background-image: linear-gradient(to right, rgba(61, 31, 122, 1),rgba(124, 100, 172, 1));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.sub-heading {
+	font-size: 40px;
+	font-family: Readex Pro;
+	color: white;
+}
+.container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: top;
+	flex-wrap: wrap;
+	gap: 100px 50px;
+	margin: 50px 50px;
+	/* background-color: yellow; */
+	height: 400px;
+}
+
+.container .card {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: rgba(209, 194, 240, 1);
+	border-radius: 50px;
+	transition: 0.3s;
+	color: white;
+	text-shadow: 2px 4px 4px rgba(0, 0, 0, 50);
+}
+
+.container .card:hover {
+	height: 450px;
+}
+
+.container .card .image-box {
+	position: absolute;
+	width: 240px;
+	height: 300px;
+	background: pink;
+	border-radius: 40px;
+	overflow: hidden;
+	transition: 0.3s;
+	object-fit: cover;
+	margin-left: 30px;
+	margin-top: 34px;
+}
+
+.container .card:hover .image-box {
+	scale: 1.15;
+}
+
+.container .card .content {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	height: 35px;
+	overflow: hidden;
+	text-align: center;
+	font-size: 24px;
+	font-family: Readex Pro;
+	transition: 0.3s;
+}
+
+.container .card:hover .content {
+	bottom: 20px;
+	height: 14%;
+}
+
+.container .card .content h2 {
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+.grid {
+	display: grid;
+}
+
+.image {
+	width: 100%;
+}
+
+.obj1 {
+	right: -200px;
+	position: absolute;
+	width: 457px;
+	height: 457px;
+	transform: rotate(104.5deg);
+	flex-shrink: 0;
+	border-radius: 457px;
+	background: rgba(117, 71, 209, 0.52);
+}
+
+.obj2 {
+	right: 20px;
+	top: 1100px;
+	position: absolute;
+	width: 205.465px;
+	height: 93px;
+	transform: rotate(-117.405deg);
+	flex-shrink: 0;
+	border-radius: 30px 0px;
+	background: rgba(133, 92, 214, 0.54);
+}
+
+.obj3 {
+	position: absolute;
+	left: 600px;
+	top : 700px;
+	z-index: -1;
+	width: 259px;
+	height: 259px;
+	flex-shrink: 0;
+	border-radius: 259px;
+	background: #1F0F3D;
+}
+
+.obj4 {
+	left: 300px;
+	top: 1000px;
+	position: absolute;
+	width: 200px;
+	height: 198.601px;
+	transform: rotate(28deg);
+	background: rgba(133, 92, 214, 0.48);
+	border-radius: 25px;
+}
+
+.obj5 {
+	left: 100px;
+	top: 100px;
+	position: absolute;
+	width: 200px;
+	height: 198.601px;
+	transform: rotate(28deg);
+	background: rgba(179, 153, 230, 0.63);
+	border-radius: 25px;
+}
+
+@media only screen and (min-width: 319px) and(max-width: 786px) {
+	.container {
+		height: 1200px;
+	}
+}
